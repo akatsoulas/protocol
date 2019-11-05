@@ -1,0 +1,26 @@
+---
+title: Emphasis box
+layout: blank
+styles:
+  - emphasis-box
+---
+
+<section class="mzp-l-content">
+
+{{#with (data "specimens")}}
+<div class="mzp-c-emphasis-box t-shadow-sm">
+  <h3>Small Shadow</h3>
+  <p>{{sentence}}</p>
+</div>
+
+<div class="mzp-c-emphasis-box t-shadow-md">
+  <h3>Medium Shadow</h3>
+  <p>{{sentence}}</p>
+</div>
+
+<div class="mzp-c-emphasis-box t-shadow-lg">
+  <h3>Large Shadow</h3>
+  <p>{{sentence}}</p>
+</div>
+{{/with}}
+</section>

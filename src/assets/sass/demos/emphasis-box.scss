@@ -1,0 +1,43 @@
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+/* -------------------------------------------------------------------------- */
+// Article demo
+
+@import '../protocol/includes/lib';
+@import '../docs/protocol';
+@import '../docs/protocol-extra';
+
+
+.mzp-c-emphasis-box {
+    margin: $layout-lg auto;
+
+    h3 {
+        @include text-display-xs;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+$color-ink-90: #1d1133;
+
+.t-shadow-sm {
+    box-shadow: 0 8px 12px  1px transparentize($color-ink-90, .96),
+                0 3px 16px  2px transparentize($color-blue-90, .88),
+                0 5px 10px -3px transparentize($color-ink-90, .88);
+}
+
+.t-shadow-md {
+    box-shadow: 0 16px 24px 2px transparentize($color-ink-90, .96),
+                0 6px  32px  4px transparentize($color-blue-90, .88),
+                0 8px  12px -5px transparentize($color-ink-90, .88);
+}
+
+.t-shadow-lg {
+    box-shadow: 0 24px 38px  3px transparentize($color-ink-90, .96),
+                0 10px 48px  8px transparentize($color-blue-90, .88),
+                0 12px 16px -6px transparentize($color-ink-90, .88);
+}
